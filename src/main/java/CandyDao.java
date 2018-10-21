@@ -25,6 +25,7 @@ public class CandyDao {
 			id = (Integer)session.save(candy);
 			tx.commit();
 		} catch (HibernateException e) {
+			System.out.println("hey");
 			e.printStackTrace();
 			tx.rollback();
 		} finally {
@@ -40,9 +41,7 @@ public class CandyDao {
 		
 		try {
 			candys = (List<Candy>)session.createQuery("FROM Candy").list();
-			System.out.println(candys.size());
-			System.out.println(candys.get(1));
-			System.out.println(candys);
+
 		} catch (HibernateException e) {
 			e.printStackTrace();
 		} finally {

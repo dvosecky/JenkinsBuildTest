@@ -12,15 +12,15 @@
 		</property>
 		
 		<property name="hibernate.connection.url">
-			jdbc:oracle:thin:@localhost:1521:xe
+			jdbc:oracle:thin:@example-danielv.cvalsamnc78z.us-east-2.rds.amazonaws.com:1521:orcl
 		</property>
 		
 		<property name="hibernate.connection.username">
-			local_DanielV
+			DanielV
 		</property>
 		
 		<property name="hibernate.connection.password">
-			root
+			vieo2i3hvkxc9av
 		</property>
 		
 		<property name="hibernate.connection.pool_size">

@@ -26,9 +26,9 @@ public class DoStuff extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		CandyDao cd = new CandyDao();
-//		cd.insertCandy(new Candy(null, "Ryan Kats", 2500, "Salty and Caramellicious"));
-//		cd.insertCandy(new Candy(null, "Bobbert Cakes", 3750, "Sour and Caramellicious"));
-//		int id = cd.insertCandy(new Candy(null, "Timber Pops", 12, "Woodchips and Caramellicious"));
+		cd.insertCandy(new Candy(null, "Ryan Kats", 2500, "Salty and Caramellicious"));
+		cd.insertCandy(new Candy(null, "Bobbert Cakes", 3750, "Sour and Caramellicious"));
+		int id = cd.insertCandy(new Candy(null, "Timber Pops", 12, "Woodchips and Caramellicious"));
 //		
 		System.out.println(cd.getAllCandys());
 	}
